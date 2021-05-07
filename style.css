@@ -8,6 +8,7 @@ body {
     height: 100vh;
     font-family: sans-serif;
     font-size: 12px;
+    color: hsl(240, 6%, 50%);
     background-image: linear-gradient(to top, hsl(240, 73%, 65%), hsl(273, 75%, 66%));
     background-repeat: no-repeat;
 
@@ -66,21 +67,48 @@ body {
     height: 70%;
     grid-column: span 1;
 }
-
+.faq h1 {
+    color: hsl(237, 12%, 33%);
+    margin-bottom: 10px;
+}
 .questions {
     width: 70%;
     height: 90%;
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
 .question {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
     padding-bottom: 15px;
+}
+.question p {
+    display: flex;
+    justify-content: space-between;
+}
+.text {
+    color: hsl(237, 12%, 33%);
+    font-weight: 700;
+}
+.arrow img {
+    display: inline-block;
+    margin-left: auto;
 }
 
 .answer {
     display: none;
+}
+
+.ans p {
+    padding-top: 10px;
+}
+
+.ans {
+    display: contents;
+    transition: 1s ease-in-out;
+}
+
+.rotate {
+    transform: rotateX(180deg);
 }
